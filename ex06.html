@@ -1,0 +1,70 @@
+<!-- Faça um programa que leia um número inteiro e mostre o seu antecessor e seu 
+sucessor.
+Ex: 
+Digite um número: 9
+O antecessor de 9 é 8
+O sucessor de 9 é 10
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06</title>
+    <style>
+      body {
+        background-color: #0aff06;
+        font-family: arial, Sans-Serif;
+        font: 12px;
+      }
+      h1 {
+        text-align: center;
+      }
+      .sed {
+        width: 500px;
+        height: 300px;
+        border-radius: 30px;
+        padding: 10px;
+        object-fit: cover;
+        box-shadow: 1px 2px 1px black;
+        background-color: #d2861f;
+        display: block;
+        margin: 0 auto;
+      }
+      .barra {
+        width: 150px;
+        height: 20px;
+        padding: 6px;
+        
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>número inteiro</h1>
+    <section class="sed">
+      <input type="number" class="barra" id="resu" placeholder="escreva um numero"><br>
+      <input type="button" value="clique aqui" id="clicar" class="barra">
+      <div>
+        <section class="secao1" id="res1"></section>
+        <section class="secao2" id="res2"></section>
+      </div>
+    </section>
+  </body>
+  <script>
+      document.getElementById('clicar').addEventListener("click", () => {
+        var resu = document.getElementById('resu').value
+        var resd1 = document.getElementById('res1')
+        var resd2 = document.getElementById('res2')
+        var nRESU = Number(resu)
+        console.log(nRESU)
+        var ant = nRESU - 1 //ira dar numero anteriro do numero dado
+        var sun = nRESU + 1 //ira dar numero sucessor do numero dado
+        resd1.innerHTML += `<p> seu anteriro e ${ant}</p>`
+        resd2.innerHTML += `<p>seu sucessor e ${sun}</p>`
+      })
+    </script>
+</html>

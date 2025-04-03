@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+
+    body {
+        background-image: url('https://cosette.cloud/api/random/aesthetic?apikey=dest');
+        background-repeat: repeat;
+        background-size: none;
+        width: auto;
+        font-family: "Alfa Slab One", serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+
+    .foto {
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        display: block;
+        margin: auto;
+    }
+
+    section {
+        width: 500px;
+        background-color: aliceblue;
+        border-radius: 20px;
+        padding: 8px;
+        box-shadow: 1px 1px 2px black;
+        display: block;
+        margin: auto;
+
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    p {
+        text-align: center;
+        background-color: linear-gradient(to right, #8B38E0, #C238E0);
+
+    }
+
+    input,
+    button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 1rem;
+    }
+</style>
+
+<body onload="dia()">
+    <h1>Pagina</h1>
+    <section>
+        <div>
+            <img src="./des.jpg" alt="perfil" class="foto">
+        </div>
+        <div id="res"></div>
+        <div>
+            <h4>MOEDAS</h4>
+            <p><input type="number" id="dinheiro" step="0.01" placeholder="ex: 50.00"></p>
+
+
+        </div>
+    </section>
+</body>
+
+
+<script>
+    function dia() {
+        var data = new Date()
+        var hora = data.getHours()
+        var res = document.getElementById('res')
+        res.innerHTML = `<p>são ${hora} horas</p>`
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,52 @@
+<!-- Faça um programa que leia as duas notas de um aluno em uma matéria e mostre 
+na tela a sua média na disciplina.
+Ex: 
+Nota 1: 4.5
+Nota 2: 8.5
+A média entre 4.5 e 8.5 é igual a 6.5-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passo 5</title>
+    <style>
+      p {
+        text-align: center;
+      }
+      section {
+        width: 500px;
+        height: 300px;
+        padding: 10px;
+        object-fit: cover;
+        border-radius: 40px;
+        background: rgb(108,193,60);
+        display: block;
+        margin: 0 auto;
+      }
+      input {
+        width: 200px;
+        height: 30px;
+        padding: 8px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <section>
+        <p>nota1: <input type="number" id="nota1"class="barra" placeholder="sua nota"></p>
+        <p>nota2: <input type="number" id="nota2"class="barra" placeholder="sua nota"></p>
+        <input type="button" id="verificar" class="barra" value="verificar">
+        <div id="res"></div>
+      </section>
+    </div>
+    <script>
+      document.getElementById('verificar')
+      
+    </script>
+  </body>
+</html>

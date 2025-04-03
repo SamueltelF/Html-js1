@@ -1,0 +1,23 @@
+<!-- PASSO 01 - SEQUÊNCIAS BÁSICAS 
+1) Escreva um programa que mostre na tela a mensagem "Olá, Mundo!" -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass 1</title>
+    <style>
+      #res {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="res">aguadando...</div>
+  </body>
+  <script>
+    var res = document.getElementById("res")
+    var s = 'ola mundo'
+    res.innerHTML = `<p>${s}</p>`
+  </script>
+</html>

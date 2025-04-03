@@ -1,0 +1,46 @@
+<!-- Desenvolva um algoritmo que leia dois números inteiros e mostre o somatório 
+entre eles.
+Ex:
+Digite um valor: 8
+Digite outro valor: 5
+A soma entre 8 e 5 é igual a 13.-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passo 4</title>
+    <style>
+      .barra {
+        width: 200px;
+        padding: 8px;
+        border-radius: 10px;
+        object-fit: cover;
+        box-shadow: 1px 1px 1px black;
+        display: block;
+        margin-bottom: 30px;
+        margin: auto;
+      }
+      div {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="number" id="num1" class="barra" placeholder="digite um numero inteiro"><br>
+    <input type="number" id="num2" class="barra" placeholder="digite outro numero inteiro"><br>
+    <input type="button" class="barra" id="somatico" value="clique aqui">
+    <div id="res">resultado aqui....</div>
+    
+    <script>
+      document.getElementById('somatico').addEventListener("click", () => {
+        var numb1 = Number(document.getElementById('num1').value)
+        var numb2 = Number(document.getElementById('num2').value)
+        var s = numb1 + numb2
+        document.getElementById('res').textContent = s
+        alert(s)
+        console.log(s)
+      })
+    </script>
+  </body>
+</html>
